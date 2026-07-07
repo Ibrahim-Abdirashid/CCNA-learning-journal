@@ -105,14 +105,14 @@ ccna-notes-somali/
 
 ---
 
-## ⚠️ Ogeysiis Muhiim ah (Disclaimer)
+## ⚠️ Ogeysiis Muhiim ah
 
-> Qoraalladan waxay yihiin **qoraallo barashada shakhsiga** oo lagu qoray erayadeena gaarka ah si loo xoojiyо barashada CCNA.
->
-> - **Repository-gan ma xidna Cisco Systems, Inc.** waxna looma sheegayo inuu xidanyahay.
-> - Qoraalladan **lama ogola** inay beddelaan buugaagta rasmiga ah, hababka tababarka Cisco, ama wax kasta oo la xidhi karo imtixaanka rasmiga ah.
-> - Xogta halkan ku jirta waxay ka soo jeedaa faallo-shakhsi ah oo ka yimaada diraasadda, **ma ahan** macluumaad rasmi ah oo ka yimaada Cisco.
-> - Faylasha aan weli la buuxin **ma jirin** qoraallo dhammaystiran.
+> Qoraalladani waa notes waxbarasho oo loogu talagalay barashada iyo ku celcelinta CCNA.
+
+- Repository-gani xiriir rasmi ah lama laha **Cisco Systems, Inc.**
+- Qoraalladani ma beddelayaan agabka rasmiga ah ee Cisco ama buugaagta diyaarinta imtixaanka.
+- Macluumaadka ku jira wuxuu ka tarjumayaa fahamkayga iyo waxbarashadayda gaarka ah.
+- Qaar ka mid ah qaybaha repository-ga weli waa la dhammaystirayaa.
 
 ---
 
