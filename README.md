@@ -92,16 +92,16 @@ ccna-notes-somali/
 
 ---
 
-## 📋 Xaaladda Qoraallada (Status)
+## 📋 Xaaladda Qoraallada
 
 | Qaybta | Xaaladda |
 |---|---|
-| 01 — Network Fundamentals | 🔄 Socda |
-| 02 — IP Addressing | 🔄 Socda |
-| 03 — Switching | 🔄 Socda |
-| 04 — Routing | 🔄 Socda |
-| Labs | ⏳ Sugaya |
-| PDF Backups | ⏳ Sugaya |
+| 01 — Network Fundamentals | 🔄 Waa la diyaarinayaa |
+| 02 — IP Addressing | 🔄 Waa la diyaarinayaa |
+| 03 — Switching | 🔄 Waa la diyaarinayaa |
+| 04 — Routing | 🔄 Waa la diyaarinayaa |
+| Labs | ⏳ Weli lama bilaabin |
+| PDF Backups | ⏳ Weli lama diyaarin |
 
 ---
 
