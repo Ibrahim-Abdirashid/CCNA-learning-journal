@@ -118,8 +118,7 @@ ccna-notes-somali/
 
 ## 📬 Xiriir
 
-Repository-gan waxaa leh ardayga CCNA-ga. Su'aalo kasta oo ku saabsan qoraallada, ka fur **Issue** GitHub-ka.
-
+Haddii aad qabto su’aal, talo ama sixitaan ku saabsan qoraallada, fadlan ka fur **Issue** GitHub-ka.
 ---
 
 *Cusbooneysiinta ugu dambeysay: 2026 | CCNA 200-301*
