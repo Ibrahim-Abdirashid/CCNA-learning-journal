@@ -61,34 +61,34 @@ ccna-notes-somali/
 
 ---
 
-### 🔷 03 — Beddelka (Switching)
+### 🔷 03 — Gudbinta Xogta ee Switch-ka (Switching)
 
-| Faylka | Qodobka |
+| Faylka | Mawduuca |
 |---|---|
-| [lan-switching.md](03-switching/lan-switching.md) | LAN Switching — sidee switch-ku u shaqeeyaa |
-| [vlan-introduction.md](03-switching/vlan-introduction.md) | Hordhaca VLAN-yada |
-| [vlans.md](03-switching/vlans.md) | VLAN — habaynta faahfaahsan |
-| [vlan-trunking.md](03-switching/vlan-trunking.md) | Trunking, Native VLAN iyo Allowed VLANs |
-| [spanning-tree-and-rstp.md](03-switching/spanning-tree-and-rstp.md) | STP iyo RSTP — xalinta wareegga |
+| [lan-switching.md](03-switching/lan-switching.md) | Sida switch-ku xogta ugu gudbiyo qalabka ku jira LAN-ka |
+| [vlan-introduction.md](03-switching/vlan-introduction.md) | Hordhac ku saabsan VLAN-yada iyo sababta loo isticmaalo |
+| [vlans.md](03-switching/vlans.md) | Abuurista, habaynta iyo maamulka VLAN-yada |
+| [vlan-trunking.md](03-switching/vlan-trunking.md) | Trunking, Native VLAN iyo VLAN-yada loo oggol yahay trunk-ka |
+| [spanning-tree-and-rstp.md](03-switching/spanning-tree-and-rstp.md) | STP iyo RSTP: ka hortagga wareegyada shabakadda |
 
 ---
 
-### 🔷 04 — Dheelitaanka (Routing)
+### 🔷 04 — Jiheynta Xogta (Routing)
 
-| Faylka | Qodobka |
+| Faylka | Mawduuca |
 |---|---|
-| [routing-introduction.md](04-routing/routing-introduction.md) | Hordhaca routing |
-| [static-routing.md](04-routing/static-routing.md) | Static routing — jidadka gacanta |
+| [routing-introduction.md](04-routing/routing-introduction.md) | Hordhac ku saabsan Routing iyo sida router-ku xogta u jiheeyo |
+| [static-routing.md](04-routing/static-routing.md) | Static Routing: waddooyinka shabakadda oo gacanta lagu dejiy
 
 ---
 
 ### 🔷 Qaybaha Kale
 
-| Xaashida | Qodobka |
+| Qaybta | Waxa ku jira |
 |---|---|
-| [labs/](labs/) | Tababarrada shaqada ee gacanta (Packet Tracer, GNS3) |
-| [images/](images/) | Sawirrada iyo jaantusyada |
-| [pdf-backups/](pdf-backups/) | Koobiyaha PDF-ka ah ee qoraallada |
+| [labs/](labs/) | Tababarrada gacanta iyo shaybaarrada Packet Tracer iyo GNS3 |
+| [images/](images/) | Sawirrada, jaantusyada iyo muuqaalada sharaxaadda |
+| [pdf-backups/](pdf-backups/) | Nuqullada PDF ee qoraallada iyo casharrada |
 
 ---
 
