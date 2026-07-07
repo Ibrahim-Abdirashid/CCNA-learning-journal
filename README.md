@@ -1,8 +1,12 @@
 # CCNA Notes Af-Soomaali 🌐📚
 
-> **Qoraallada shakhsiga ah ee CCNA — la qoray Af-Soomaali**
->
-> Xog-ururintan waxay ku jirtaa faallo-shakhsi ah oo ku saabsan maadooyinka CCNA, oo loogu talagalay barashada shakhsiga iyo dib-u-eegista. Waxaa lagu qoray Af-Soomaali si loo fududeeyo fahamka, iyadoo erayada farsamada networking la ilaaliyay Ingiriisiga.
+
+
+> **Kaydkan waxa ku jira qoraalladayda gaarka ah ee CCNA, kuwaas oo aan ku diyaariyey Af-Soomaali.**
+
+Waxa uu ka kooban yahay sharaxaad, casharro kooban, amarro Cisco, tusaalooyin iyo qodobo dib-u-eegis ah oo la xiriira maaddooyinka CCNA.
+
+Ujeeddada kaydkani waa in uu fududeeyo barashada iyo ku celcelinta CCNA. Erayada farsamada ee **networking-ka** waxaan ku reebay Af-Ingiriisi si macnahooda saxda ah loo ilaaliyo, halka sharaxaaddooda lagu bixiyey Af-Soomaali fudud oo la fahmi karo.
 
 ---
 
