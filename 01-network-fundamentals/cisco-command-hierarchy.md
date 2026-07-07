@@ -1,181 +1,459 @@
-# Habraaca Amarka Cisco IOS — Cisco Command Hierarchy
+# Heerarka Amarrada Cisco IOS  
+### Cisco IOS Command Hierarchy
 
 ## Ujeeddada
 
-Cisco IOS waxay leedahay **levels kala sareeya** (command hierarchy) oo marba aad mid ka gashid adigoo qalabka maamuleysa. Heer kasta wuxuu leeyahay awoodiisa (permissions) gaarka ah — taa oo macnaheedu yahay in amarrada qaarkood ay ka shaqeynayaan oo keliya heer gaar ah, ee kale ma shaqeeyaan.
+Marka aad maamulayso Cisco switch ama router, amarrada oo dhan hal meel lagama wada fuliyo. Cisco IOS wuxuu amarrada u kala saaraa **heerar kala duwan (command modes)**.
+
+Heer kasta:
+
+- Wuxuu leeyahay calaamad u gaar ah oo loo yaqaan **prompt**
+- Wuxuu kuu oggolaanayaa amarro gaar ah
+- Wuxuu leeyahay awood ka duwan heerarka kale
+
+Sidaas darteed, amar wuxuu shaqayn karaa marka aad joogto heer gaar ah, laakiin wuu diidi karaa haddii aad ku qorto heer aan ku habboonayn.
 
 ---
 
-## Waa maxay Cisco IOS CLI Levels?
+## Waa maxay heerarka Cisco IOS CLI?
 
-Cisco IOS CLI (Command Line Interface) waxay leedahay **6 heer (levels)** oo muhiim ah. Saddexda koowaad ayaa ugu badan la isticmaalaa maalinlaha:
+**Cisco IOS CLI (Command-Line Interface)** waa goobta qoraalka ah ee lagu maamulo Cisco routers iyo switches.
 
-| Prompt | Magaca Heerka | Sharaxaad |
+Cisco IOS wuxuu leeyahay heerar badan, laakiin lixdan ayaa ah kuwa inta badan la isticmaalo:
+
+| Prompt | Magaca heerka | Waxa lagu qabto |
 |---|---|---|
-| `Hostname>` | User EXEC Mode | Heerka ugu hooseeya — awood xaddidan |
-| `Hostname#` | Privileged EXEC Mode (Enable Mode) | Heerka labaad — show commands iyo wax badan |
-| `Hostname(config)#` | Global Configuration Mode | Heerka 3aad — meesha configuration-ka laga sameeyo |
-| `Hostname(config-if)#` | Interface Configuration Mode | Heerka interface-ka gaar ah |
-| `Hostname(config-router)#` | Router Configuration Mode | Heerka routing protocol-ka |
-| `Hostname(config-line)#` | Line Configuration Mode | Heerka VTY, TTY, iyo async lines |
+| `Switch>` | User EXEC Mode | Daawashada macluumaad kooban iyo tijaabooyin fudud |
+| `Switch#` | Privileged EXEC Mode | Fulinta amarro awood badan iyo gelitaanka configuration-ka |
+| `Switch(config)#` | Global Configuration Mode | Dejinta guud ee qalabka |
+| `Switch(config-if)#` | Interface Configuration Mode | Dejinta interface gaar ah |
+| `Router(config-router)#` | Router Configuration Mode | Dejinta routing protocol |
+| `Switch(config-line)#` | Line Configuration Mode | Dejinta console, VTY ama AUX lines |
+
+> **Fiiro gaar ah:** Calaamadda prompt-ku waxay kuu sheegaysaa heerka aad hadda ku sugan tahay.
 
 ---
 
-## Sidee Levels-ku u Shaqeeyaan?
+# Sidee ayay heerarku u shaqeeyaan?
 
-### Heer 1 — User EXEC Mode
+## Heerka 1: User EXEC Mode
 
-> **Calaamadda:** `Switch>`
+### Calaamadda
 
-Kani waa **heerka ugu hooseeya** ee aad gashid marka aad qalabka Cisco (switch ama router) u xidato. Heerkan:
-
-- Waxaad fulin kartaa **amarrada kooban** oo aan qalabka beddelin waxba.
-- Awood baadan **ma lihid** — si tusaale ah, ma arki kartid configuration-ka dhammaystiran.
-- Lagu gartaa **magaca qalabka oo `>` ku xiga** (tusaale: `Switch>`).
-
-**Si aad u ogaato amarrada aad fulin karto heerkan**, ku dhufo calaamadda su'aasha:
-
-```cisco
-Switch> ?
+```text
+Switch>
 ```
 
----
+Kani waa heerka ugu horreeya ee aad gasho marka aad qalabka furto ama aad CLI-ga ku xiranto.
 
-### Heer 2 — Privileged EXEC Mode (Enable Mode)
+Heerkan waxaad ku:
 
-> **Calaamadda:** `Switch#`
+- Daawan kartaa macluumaad kooban
+- Fulisaa amarro tijaabo ah sida `ping`
+- Eegi kartaa qaar ka mid ah xogta qalabka
+- Baran kartaa amarrada kuu bannaan adigoo adeegsanaya `?`
 
-Kani waa **heerka 2aad**. Si aad uga gudubto User EXEC Mode, waxaad qortaa amarka `enable`:
+Laakiin heerkan kama beddeli kartid configuration-ka qalabka.
+
+Tusaale:
+
+```text
+Switch> ?
+Switch> ping 192.168.1.1
+Switch> show clock
+```
+
+Si aad uga gudubto User EXEC Mode una gasho heerka xiga, isticmaal:
 
 ```cisco
+enable
+```
+
+```text
 Switch> enable
 Switch#
 ```
 
-Heerkan waxaad awoodaa:
+---
 
-- Fulinта **show commands** si aad u aragto xaaladda qalabka.
-- Seegidda diiwaannada (logs) iyo dib-u-dejinta (reload).
-- Galitaanka Global Configuration Mode.
+## Heerka 2: Privileged EXEC Mode
 
-**Si aad u ogaato amarrada aad fulin karto**, ku dhufo `?` kadibna riix Enter:
+### Calaamadda
+
+```text
+Switch#
+```
+
+Kani waa heer awood badan leh. Waxaa sidoo kale loo yaqaan **Enable Mode**.
+
+Heerkan waxaad ku:
+
+- Fulisaa amarro badan oo `show` ah
+- Eegi kartaa running configuration-ka
+- Kaydin kartaa configuration-ka
+- Dib u shidi kartaa qalabka
+- Geli kartaa Global Configuration Mode
+- Fulisaa amarro troubleshooting ah
+
+Tusaalooyin:
 
 ```cisco
+show running-config
+show startup-config
+show interfaces
+show ip interface brief
+copy running-config startup-config
+```
+
+Si aad u aragto amarrada heerkan kuu bannaan:
+
+```text
 Switch# ?
 ```
 
----
-
-### Heer 3 — Global Configuration Mode
-
-> **Calaamadda:** `Switch(config)#`
-
-Kani waa **heerka 3aad** — halka ugu muhiimsan ee **configuration-ka laga sameeyo**. Si aad uga gudubto Privileged EXEC Mode, waxaad isticmashaa:
+Si aad u gasho Global Configuration Mode:
 
 ```cisco
+configure terminal
+```
+
+Ama si kooban:
+
+```cisco
+conf t
+```
+
+```text
 Switch# configure terminal
 Switch(config)#
 ```
 
-Heerkan:
+---
 
-- Waxaad awoodaa **badbaadinta** (saving) iyo **beddel** qalabka oo dhan.
-- Waana **halka ugu badan** ee amarrada configuration-ka lagu fuliyaa.
-- Lagu gartaa in magaca qalabka oo `(config)#` ku xiga.
+## Heerka 3: Global Configuration Mode
+
+### Calaamadda
+
+```text
+Switch(config)#
+```
+
+Kani waa heerka ugu weyn ee lagu dejiyo configuration-ka qalabka.
+
+Heerkan waxaad ku:
+
+- Beddeli kartaa magaca qalabka
+- Samayn kartaa VLANs
+- Dejisaa passwords
+- Daaraysaa adeegyo kala duwan
+- U gudbi kartaa heerarka hoose ee configuration-ka
+
+Isbeddellada aad halkan ku samayso waxay galaan:
+
+```text
+running-config
+```
+
+Tusaalooyin:
+
+```cisco
+hostname SW1
+enable secret class
+service password-encryption
+banner motd #Authorized users only#
+```
+
+Tusaale dhammaystiran:
+
+```text
+Switch# configure terminal
+Switch(config)# hostname SW1
+SW1(config)#
+```
 
 ---
 
-### Heerarka Hooseeya ee Configuration Mode
+# Heerarka hoose ee Configuration Mode
 
-Ka dib marka aad Global Configuration Mode gasho, waxaad u gudbi kartaa heerarka hooseeya ee gaar ah:
+Marka aad joogto Global Configuration Mode, waxaad u gudbi kartaa heerar hoose oo lagu dejiyo qayb gaar ah.
 
-**Interface Configuration Mode** — si aad u habaynto interface gaar ah:
+## Interface Configuration Mode
+
+Waxaa loo isticmaalaa dejinta interface ama port gaar ah.
 
 ```cisco
-Switch(config)# interface GigabitEthernet 0/1
-Switch(config-if)#
+interface gigabitEthernet 0/1
 ```
 
-**Router Configuration Mode** — si aad u habaynto routing protocol:
+```text
+SW1(config)# interface gigabitEthernet 0/1
+SW1(config-if)#
+```
+
+Heerkan waxaad ku samayn kartaa:
 
 ```cisco
+description Link-to-SW2
+switchport mode trunk
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+```
+
+---
+
+## Router Configuration Mode
+
+Waxaa loo isticmaalaa dejinta routing protocol sida OSPF, RIP ama EIGRP.
+
+```cisco
+router ospf 1
+```
+
+```text
 Router(config)# router ospf 1
 Router(config-router)#
 ```
 
-**Line Configuration Mode** — si aad u habaynto VTY ama console lines:
+Tusaale:
 
 ```cisco
-Switch(config)# line vty 0 4
-Switch(config-line)#
+network 192.168.1.0 0.0.0.255 area 0
 ```
 
 ---
 
-## Sidee Levels-ka Loo Baxo?
+## Line Configuration Mode
 
-| Amarka | Waxuu Samaynaa |
-|---|---|
-| `exit` | Heer hoose ayuu ku noqdaa (mid) |
-| `end` ama `Ctrl+Z` | Toos ayuu ugu noqdaa Privileged EXEC Mode |
-| `disable` | Ka baxaa Privileged EXEC Mode oo User EXEC Mode ku noqdaa |
+Waxaa loo isticmaalaa dejinta hababka qalabka lagu geli karo, sida:
+
+- Console
+- VTY — Telnet ama SSH
+- AUX
+
+Tusaale VTY:
 
 ```cisco
-Switch(config-if)# exit
-Switch(config)# exit
-Switch#
+line vty 0 4
 ```
 
-ama si degdeg ah:
+```text
+SW1(config)# line vty 0 4
+SW1(config-line)#
+```
+
+Tusaale configuration:
 
 ```cisco
+password cisco
+login
+transport input ssh
+```
+
+Tusaale Console:
+
+```cisco
+line console 0
+```
+
+```text
+SW1(config-line)#
+```
+
+---
+
+# Sidee looga baxaa heerarka?
+
+## Amarka `exit`
+
+Amarka `exit` wuxuu kaa saarayaa heerka aad hadda joogto, wuxuuna kuu celinayaa hal heer oo kaa sarreeya.
+
+```text
+SW1(config-if)# exit
+SW1(config)#
+```
+
+Tusaale kale:
+
+```text
+SW1(config-line)# exit
+SW1(config)#
+```
+
+---
+
+## Amarka `end`
+
+Amarka `end` wuxuu kaa saarayaa heer kasta oo configuration ah, wuxuuna si toos ah kuugu celinayaa Privileged EXEC Mode.
+
+```text
+SW1(config-if)# end
+SW1#
+```
+
+Waxa kale oo la isticmaali karaa:
+
+```text
+Ctrl + Z
+```
+
+---
+
+## Amarka `disable`
+
+Amarka `disable` wuxuu kaa celinayaa Privileged EXEC Mode una celinayaa User EXEC Mode.
+
+```text
+SW1# disable
+SW1>
+```
+
+---
+
+## Soo koobidda amarrada bixitaanka
+
+| Amarka | Waxa uu sameeyo |
+|---|---|
+| `exit` | Wuxuu dib kuugu celinayaa hal heer |
+| `end` | Wuxuu si toos ah kuugu celinayaa Privileged EXEC Mode |
+| `Ctrl + Z` | Wuxuu qabtaa shaqada `end` |
+| `disable` | Wuxuu Privileged EXEC Mode kaaga celinayaa User EXEC Mode |
+| `logout` | Wuxuu xirayaa CLI session-ka |
+
+---
+
+# Qaab-dhismeedka heerarka Cisco IOS
+
+```text
+Switch>
+   │
+   └── enable
+         │
+         ▼
+Switch#
+   │
+   └── configure terminal
+         │
+         ▼
+Switch(config)#
+   │
+   ├── interface gigabitEthernet 0/1
+   │      └── Switch(config-if)#
+   │
+   ├── router ospf 1
+   │      └── Router(config-router)#
+   │
+   └── line vty 0 4
+          └── Switch(config-line)#
+```
+
+Qaabkan wuxuu muujinayaa in Cisco IOS uu leeyahay nidaam heerar kala sarreeya. Si aad u gaarto heer hoose, waa inaad marka hore martaa heerarka ka sarreeya.
+
+---
+
+# Khaladaadka caadiga ah
+
+## 1. Amar lagu qoray heer khaldan
+
+Haddii amar lagu qoro heer uusan ka shaqaynayn, waxaa laga yaabaa inaad aragto:
+
+```text
+% Invalid input detected at '^' marker.
+```
+
+Tusaale ahaan:
+
+```text
+Switch> show running-config
+```
+
+Amarkan User EXEC Mode kama shaqaynayo. Marka hore waa inaad gashaa Privileged EXEC Mode:
+
+```text
+Switch> enable
+Switch# show running-config
+```
+
+---
+
+## 2. Prompt-ka oo aan la fiirin
+
+Mar kasta eeg calaamadda prompt-ka:
+
+```text
+>          User EXEC Mode
+#          Privileged EXEC Mode
+(config)#  Global Configuration Mode
+(config-if)# Interface Configuration Mode
+```
+
+Prompt-ku wuxuu kuu sheegayaa meesha aad joogto iyo nooca amarrada aad fulin karto.
+
+---
+
+## 3. `configure terminal` oo heer khaldan lagu qoray
+
+Amarkan wuxuu ka shaqeeyaa Privileged EXEC Mode:
+
+```text
+Switch# configure terminal
+```
+
+Kama shaqaynayo User EXEC Mode:
+
+```text
+Switch> configure terminal
+```
+
+Marka hore isticmaal:
+
+```cisco
+enable
+```
+
+---
+
+## 4. `exit` iyo `end` oo la isku khaldo
+
+`exit` wuxuu dib kuu celinayaa hal heer:
+
+```text
+Switch(config-if)# exit
+Switch(config)#
+```
+
+`end` wuxuu toos kuu geynayaa Privileged EXEC Mode:
+
+```text
 Switch(config-if)# end
 Switch#
 ```
 
 ---
 
-## Koobaynta Levels-ka (Sawirka Qaab-dhismeedka)
+# Qodobbada muhiimka ah
 
-```text
-Switch>                        ← User EXEC Mode        (Heer 1)
-  └─ enable
-Switch#                        ← Privileged EXEC Mode   (Heer 2)
-  └─ configure terminal
-Switch(config)#                ← Global Config Mode     (Heer 3)
-  ├─ interface ...
-  │   └─ Switch(config-if)#     ← Interface Mode
-  ├─ router ...
-  │   └─ Switch(config-router)# ← Router Mode
-  └─ line ...
-      └─ Switch(config-line)#   ← Line Mode
-```
-
-<!-- TODO: Add the original OneNote image here — save as: images/cisco-command-hierarchy-table.png -->
+- Cisco IOS wuxuu isticmaalaa nidaam heerar kala sarreeya.
+- Heer kasta wuxuu leeyahay amarro iyo awood u gaar ah.
+- Calaamadda `>` waxay muujinaysaa User EXEC Mode.
+- Calaamadda `#` waxay muujinaysaa Privileged EXEC Mode.
+- Calaamadda `(config)#` waxay muujinaysaa Global Configuration Mode.
+- `enable` wuxuu kuu gudbinayaa Privileged EXEC Mode.
+- `configure terminal` wuxuu kuu gudbinayaa Global Configuration Mode.
+- `exit` wuxuu dib kuu celinayaa hal heer.
+- `end` ama `Ctrl + Z` waxay kuu celinayaan Privileged EXEC Mode.
+- Calaamadda `?` waxay ku tusaysaa amarrada ka shaqaynaya heerka aad joogto.
 
 ---
 
-## Khaladaadka Caadiga ah
+# Su’aalo dib-u-eegis ah
 
-- **"Invalid input detected"** — Badanaa macnaheedu waa inaad heerka khaldan joogatid. Tusaale ahaan, aad `show running-config` ku dooneyso User EXEC Mode — waa inay ka shaqeysaa Privileged EXEC Mode keliya.
-- **Inaad ilawdo heerka aad joogtid** — Fiiri prompt-ka si joogta ah: `>` waa User EXEC, `#` waa Privileged EXEC, `(config)#` waa Global Configuration.
-- **`configure terminal` halkii `conf t`** — Labaduba waa sax. `conf t` waa gaaban (shorthand).
-
----
-
-## Qodobbada Muhiimka ah
-
-- Cisco IOS waxay isticmaashaa **hierarchical mode system** — si amarro kala sareeya heerarka kala duwan la siiyo.
-- **`>`** = User EXEC | **`#`** = Privileged EXEC | **`(config)#`** = Global Configuration.
-- Calaamadda **`?`** waa aalad caawinta — waqti kasta waad isticmaali kartaa si aad u ogaato amarrada heerka aad jooogtid.
-- Heerka aad ka shaqeyso waa lagu gartaa **calaamadda (prompt)** ee ka horeysa meesha aad ku qortid.
-
----
-
-## Su'aalo Dib-u-eegis ah
-
-1. Cisco IOS levels-ka kala sareeya waa maxay, oo midkood midkood ka faraq waa maxay?
-2. Sideed uga gudbi kartaa User EXEC Mode si toos ah Global Configuration Mode?
-3. Heerka `Switch(config-if)#` waa maxay, oo goorma ayaad u baahan tahay?
-4. Calaamadaha `>` iyo `#` xagee loo adeegsan karaa si loo garto heerka qofku joogaa?
-5. Amarka `end` iyo `exit` farqigood waa maxay?
+1. Maxaa loola jeedaa Cisco IOS command hierarchy?
+2. Waa maxay farqiga u dhexeeya User EXEC Mode iyo Privileged EXEC Mode?
+3. Amarkee ayaa lagu galaa Privileged EXEC Mode?
+4. Amarkee ayaa lagu galaa Global Configuration Mode?
+5. Maxay calaamadaha `>`, `#`, iyo `(config)#` kala tilmaamayaan?
+6. Waa maxay shaqada amarka `exit`?
+7. Waa maxay farqiga u dhexeeya `exit` iyo `end`?
+8. Interface Configuration Mode maxaa lagu qabtaa?
+9. Sidee loo ogaadaa amarrada ka shaqaynaya heerka aad joogto?
+10. Maxaa sababa fariinta `% Invalid input detected`?
