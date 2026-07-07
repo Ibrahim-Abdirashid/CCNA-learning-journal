@@ -8,10 +8,10 @@
 
 ## 🎯 Ujeeddooyinka Repository-ga
 
-- Isku-ururinta dhammaan qoraallada CCNA ee laga baranayo imtixaanka Cisco Certified Network Associate (CCNA 200-301)
-- Bixinta macluumaadka shabakadaha (networking) si cad oo Af-Soomaali ah
-- Abuurista meel toosid ah oo lagu kaydiyay xogta networking oo xilligaas la booqan karo
-- Taageeridda ardayda Soomaalida ah ee xiisaynaysa cilmiga networking
+- Inaan hal meel iskugu keeno intii awoodeyda wixi notes ah ee aan ka qoray CCNA Cisco Certified Network Associate (CCNA 200-301)
+- Bixinta macluumaadka shabakadaha (networking)  oo Af-Soomaali ah
+- In la helo madal hagid ah  oo lagu kaydiyay xog ku saabsan networking-ka oo xilli walba  la booqan karo
+- Taageeridda ardayda Soomaalida ah ee xiisaynaysa cilmiga networking-ka
 
 ---
 
