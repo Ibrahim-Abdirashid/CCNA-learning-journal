@@ -38,26 +38,26 @@ ccna-notes-somali/
 
 ## 📖 Tusmada (Table of Contents)
 
-### 🔷 01 — Asaaska Shabakadaha (Network Fundamentals)
+### 🔷 01 — Aasaaska Shabakadaha (Network Fundamentals)
 
-| Faylka | Qodobka |
+| Faylka | Mawduuca |
 |---|---|
-| [cisco-command-hierarchy.md](01-network-fundamentals/cisco-command-hierarchy.md) | Habraaca amarka Cisco IOS — mode-yada CLI |
-| [configuration-files.md](01-network-fundamentals/configuration-files.md) | Faylasha habaynta — startup-config iyo running-config |
-| [basic-configuration-commands.md](01-network-fundamentals/basic-configuration-commands.md) | Amarrada asaasiga ah ee IOS |
-| [osi-model.md](01-network-fundamentals/osi-model.md) | Nooca OSI — lakabadda 7 |
-| [physical-layer.md](01-network-fundamentals/physical-layer.md) | Lakabka Koowaad — xididdada jirka ah |
+| [cisco-command-hierarchy.md](01-network-fundamentals/cisco-command-hierarchy.md) | Heerarka amarrada Cisco IOS iyo habka CLI-gu u shaqeeyo |
+| [configuration-files.md](01-network-fundamentals/configuration-files.md) | Faylasha habaynta: `running-config` iyo `startup-config` |
+| [basic-configuration-commands.md](01-network-fundamentals/basic-configuration-commands.md) | Amarrada aasaasiga ah ee Cisco IOS |
+| [osi-model.md](01-network-fundamentals/osi-model.md) | Qaabka OSI iyo toddobadiisa lakab |
+| [physical-layer.md](01-network-fundamentals/physical-layer.md) | Lakabka Jireed (Physical Layer) iyo hababka xogta loo gudbiyo |
 
 ---
 
 ### 🔷 02 — Cinwaannada IP (IP Addressing)
 
-| Faylka | Qodobka |
+| Faylka | Mawduuca |
 |---|---|
-| [ip-address-configuration.md](02-ip-addressing/ip-address-configuration.md) | Faahfaahinta cinwaannada IP |
-| [configuring-ip-addresses.md](02-ip-addressing/configuring-ip-addresses.md) | Habaynta cinwaannada IP ee qalabka |
-| [subnetting.md](02-ip-addressing/subnetting.md) | Subnetting — qaybinta shabakadaha |
-| [subnetting-part-2.md](02-ip-addressing/subnetting-part-2.md) | Subnetting — qaybta labaad (sii horumarsan) |
+| [ip-address-configuration.md](02-ip-addressing/ip-address-configuration.md) | Fahamka cinwaannada IP iyo sida ay u shaqeeyaan |
+| [configuring-ip-addresses.md](02-ip-addressing/configuring-ip-addresses.md) | Sida cinwaanka IP loogu dejiyo qalabka shabakadda |
+| [subnetting.md](02-ip-addressing/subnetting.md) | Subnetting: sida shabakad weyn loogu qaybiyo shabakado yaryar |
+| [subnetting-part-2.md](02-ip-addressing/subnetting-part-2.md) | Subnetting: qaybta labaad iyo faahfaahin dheeraad ah |
 
 ---
 
