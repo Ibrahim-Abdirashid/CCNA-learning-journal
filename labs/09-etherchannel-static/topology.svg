@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 731 300" width="731" height="300" font-family="Segoe UI, Arial, sans-serif">
+<rect width="731" height="300" fill="#ffffff"/>
+<line x1="90" y1="91" x2="641" y2="90" stroke="#555" stroke-width="2"/>
+<rect x="194" y="83" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="211" y="94" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<rect x="502" y="82" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="520" y="93" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="90" y1="91" x2="641" y2="90" stroke="#555" stroke-width="2"/>
+<rect x="194" y="83" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="211" y="94" font-size="10" text-anchor="middle" fill="#333">F0/2</text>
+<rect x="502" y="82" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="520" y="93" font-size="10" text-anchor="middle" fill="#333">F0/2</text>
+<line x1="90" y1="91" x2="641" y2="90" stroke="#555" stroke-width="2"/>
+<rect x="194" y="83" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="211" y="94" font-size="10" text-anchor="middle" fill="#333">F0/3</text>
+<rect x="502" y="82" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="520" y="93" font-size="10" text-anchor="middle" fill="#333">F0/3</text>
+<line x1="90" y1="91" x2="641" y2="90" stroke="#555" stroke-width="2"/>
+<rect x="194" y="83" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="211" y="94" font-size="10" text-anchor="middle" fill="#333">F0/4</text>
+<rect x="502" y="82" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="520" y="93" font-size="10" text-anchor="middle" fill="#333">F0/4</text>
+<rect x="60" y="75" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="90" y="95" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="90" y="129" font-size="12" font-weight="600" text-anchor="middle" fill="#111">SW-1</text>
+<rect x="611" y="74" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="641" y="94" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="641" y="128" font-size="12" font-weight="600" text-anchor="middle" fill="#111">SW-2</text>
+</svg>

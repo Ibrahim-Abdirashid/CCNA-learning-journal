@@ -1,0 +1,4 @@
+twofish>=0.3.0
+markdownify>=0.13
+beautifulsoup4>=4.12
+Pillow>=10

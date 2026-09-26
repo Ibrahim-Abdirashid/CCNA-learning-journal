@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956 428" width="956" height="428" font-family="Segoe UI, Arial, sans-serif">
+<rect width="956" height="428" fill="#ffffff"/>
+<line x1="90" y1="94" x2="414" y2="90" stroke="#555" stroke-width="2"/>
+<rect x="151" y="85" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="161" y="96" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="326" y="83" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="343" y="94" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="100" y1="298" x2="462" y2="297" stroke="#555" stroke-width="2"/>
+<rect x="169" y="290" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="180" y="301" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="365" y="289" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="382" y="300" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="414" y1="90" x2="866" y2="146" stroke="#555" stroke-width="2"/>
+<rect x="497" y="94" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="514" y="105" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="750" y="126" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="767" y="137" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<line x1="462" y1="297" x2="866" y2="146" stroke="#555" stroke-width="2"/>
+<rect x="533" y="256" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="551" y="267" font-size="10" text-anchor="middle" fill="#333">G0/2</text>
+<rect x="760" y="171" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="777" y="182" font-size="10" text-anchor="middle" fill="#333">G0/2</text>
+<rect x="80" y="278" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="100" y="302" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">PC</text>
+<text x="100" y="336" font-size="12" font-weight="600" text-anchor="middle" fill="#111">PC0</text>
+<text x="100" y="350" font-size="10" text-anchor="middle" fill="#444">11.200.0.2</text>
+<rect x="70" y="74" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="90" y="98" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">PC</text>
+<text x="90" y="132" font-size="12" font-weight="600" text-anchor="middle" fill="#111">PC1</text>
+<text x="90" y="146" font-size="10" text-anchor="middle" fill="#444">10.100.0.2</text>
+<rect x="384" y="74" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="414" y="94" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="414" y="128" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Switch0</text>
+<rect x="432" y="281" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="462" y="301" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="462" y="335" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Switch1</text>
+<rect x="836" y="130" width="60" height="32" rx="4" fill="#17becf" stroke="#123" stroke-width="1.5"/>
+<text x="866" y="150" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">L3</text>
+<text x="866" y="184" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Multilayer Switch0</text>
+<text x="866" y="198" font-size="10" text-anchor="middle" fill="#444">10.100.0.1, 11.200.0.1</text>
+</svg>
