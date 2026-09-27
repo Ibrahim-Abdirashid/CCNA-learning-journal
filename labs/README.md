@@ -29,6 +29,10 @@ Lab walba wuxuu leeyahay: faylka `.pkt`, sawirka topology-ga, jadwalka IP-yada, 
 | 21 | [CCNA2 Lab Activity 2 — VLANs, Trunk, VTP, Port Security (3 switch, 38 PC)](21-lab-activity-2-vlans-trunk-vtp/README.md) | Sare | 40 | [03-vlans](../03-switching/03-vlans.md), [04-vlan-trunking](../03-switching/04-vlan-trunking.md), [06-vtp](../03-switching/06-vtp.md) |
 | 22 | [CCNA2 Lab Activity 3 — Inter-VLAN Routing Multilayer Switch](22-lab-activity-3-intervlan-mls/README.md) | Sare | 15 | [09-intervlan-layer3-switch](../03-switching/09-intervlan-layer3-switch.md) |
 | 23 | [Lab Guud (Capstone) — EtherChannel, VLANs, ROAS, DHCP, SSH, Static Routing](23-capstone-etherchannel-vlans-dhcp-ssh-static/README.md) | Sare | 19 | [08-router-on-a-stick](../03-switching/08-router-on-a-stick.md), [11-etherchannel](../03-switching/11-etherchannel.md), [02-dhcp](../06-ip-services/02-dhcp.md), [02-static-routing](../04-routing/02-static-routing.md), [02-ssh](../05-device-management/02-ssh.md) |
+| 24 | [IP Address Configuration — Router, Switch iyo PC (Day 10)](24-ip-configuration-basics/README.md) | Bilow | 8 | [01-ip-address-configuration](../02-ip-addressing/01-ip-address-configuration.md), [02-configuring-ip-addresses](../02-ip-addressing/02-configuring-ip-addresses.md) |
+| 25 | [Routing Part 1 — Directly Connected Networks (Day 12)](25-routing-directly-connected/README.md) | Bilow | 9 | [01-routing-introduction](../04-routing/01-routing-introduction.md) |
+| 26 | [Network Design — HQ, Server Room, Burco + Static Routing](26-network-design-static-routing/README.md) | Dhexe | 15 | [02-static-routing](../04-routing/02-static-routing.md), [01-ip-address-configuration](../02-ip-addressing/01-ip-address-configuration.md) |
+| 27 | [Mashruuc Guud — Daheeye University: EIGRP, ROAS, DHCP, EtherChannel, SSH (4 campus)](27-eigrp-daheeye-university/README.md) | Sare | 31 | [08-router-on-a-stick](../03-switching/08-router-on-a-stick.md), [11-etherchannel](../03-switching/11-etherchannel.md), [02-dhcp](../06-ip-services/02-dhcp.md), [02-ssh](../05-device-management/02-ssh.md), [03-ospf](../04-routing/03-ospf.md) |
 
 ## Warbixinno (Reports)
 

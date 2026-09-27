@@ -295,6 +295,60 @@ LABS = [
       ],
       verify=["`show etherchannel summary` HQ-S1 — Po1(SU)", "`show ip dhcp binding` HQ-R1 — PC-yada laanta (20.0.0.x) sidoo kale way ku jiraan (relay wuu shaqeeyay)", "`show ip route` labada router", "PC0 (HQ VLAN10) → ping PC10 (laanta VLAN30) ✅", "PC → `ssh -l ibrahim 10.0.1.1`"],
       notes=["HQ-S1 SVI VLAN10 = 10.0.1.1/24 — isku mid IP-ga router-ka g0/0.10! Waa khalad (IP conflict): u beddel 10.0.1.2/29.", "PC6, PC7, PC8 weli DHCP looma dhigin — Desktop → IP Configuration → DHCP.", "Route-ka b-R1 `10.0.0.0/8` waa summary ballaaran; ku filan laakiin /29 iyo /28 gaar ah ayaa ka sax badan."]),
+ dict(slug='24-ip-configuration-basics', src='Day 10- IP Address Configuration on Network Devices.pkt', src_dir=r'C:\Users\hp\Documents\CCNA',
+      title='IP Address Configuration — Router, Switch iyo PC (Day 10)',
+      level='Bilow', lessons=['02-ip-addressing/01-ip-address-configuration.md', '02-ip-addressing/02-configuring-ip-addresses.md'],
+      objective="Lab-ka casharka *IP Address Configuration on Network Devices*. Shirkad yar: EdgeRouter oo laba LAN leh (192.168.1.0/24 — maamulka, 172.16.0.0/16 — IT iyo Data Server), laba switch (branch1, branch2). Ujeeddadu waa: interface-yada router-ka IP sii oo shid, PC-yada IP + gateway sii, switch-yada hostname iyo user sii. Qaar ka mid ah PC-yada (Finance Manager, HR Manager) iyo gateway-ga IT Manager **ula kac ayaa looga tagay** — adigu dhammaystir.",
+      steps=[
+        ("Router: hostname iyo interface-yada", "Router(config)# hostname EdgeRouter\nEdgeRouter(config)# interface g0/0\nEdgeRouter(config-if)# ip address 192.168.1.254 255.255.255.0\nEdgeRouter(config-if)# no shutdown\nEdgeRouter(config)# interface g0/1\nEdgeRouter(config-if)# ip address 172.16.1.254 255.255.0.0\nEdgeRouter(config-if)# no shutdown"),
+        ("Switch-yada: hostname iyo user local ah", "Switch(config)# hostname branch1\nbranch1(config)# username ccna secret cisco"),
+        ("PC walba: Desktop → IP Configuration → Static: IP, mask, gateway = IP-ga router-ka ee LAN-kaas", "CEO-PC        192.168.1.2  /24  gw 192.168.1.254\nFinance Mgr   192.168.1.3  /24  gw 192.168.1.254   <- adigu geli\nHR Manager    192.168.1.4  /24  gw 192.168.1.254   <- adigu geli\nIT Manager    172.16.1.4   /16  gw 172.16.1.254    <- gateway ka maqan\nData Server   172.16.1.5   /16  gw 172.16.1.254"),
+      ],
+      verify=["`show ip interface brief` — g0/0 iyo g0/1 *up/up*", "CEO-PC → ping 192.168.1.254 (gateway) ✅, kadib ping 172.16.1.5 (Data Server) ✅", "IT Manager gateway la'aan → ping 192.168.1.2 ❌ (sababta: gateway ma laha!)"],
+      notes=["Tani waa lab-ka ugu horreeya — haddii ping-gu shaqayn waayo, mar walba hubi: (1) `no shutdown`, (2) mask-ka, (3) gateway-ga PC-ga.", "Switch-yadu IP uma baahna si ay frames u gudbiyaan; IP waxaa loo siiyaa keliya management (Lab 01/02)."]),
+
+ dict(slug='25-routing-directly-connected', src='Day 12 Routing PART 1.pkt', src_dir=r'C:\Users\hp\Documents\CCNA',
+      title='Routing Part 1 — Directly Connected Networks (Day 12)',
+      level='Bilow', lessons=['04-routing/01-routing-introduction.md'],
+      objective="Lab-ka casharka *Routing — Hordhac*. Laba router oo isku xiran (192.168.168.0/24), Router1 laba LAN leeyahay (192.168.1.0, 192.168.2.0), Router_2 hal LAN (192.168.3.0). Ujeeddadu waa in la arko **directly connected networks** (`C` iyo `L`) routing table-ka, iyo in la fahmo sababta Cashier 1 uu Cashier 3 u gaarayo (isku router) laakiin Cashier 4 **uusan** u gaarin (router kale, route ma jirto) — taasi waa halka static routing (Lab 14) ka bilaabmayso.",
+      steps=[
+        ("Interface-yada IP sii oo shid (labada router)", "Router1(config)# interface g0/0\nRouter1(config-if)# ip address 192.168.1.1 255.255.255.0\nRouter1(config-if)# no shutdown\nRouter1(config)# interface g0/1\nRouter1(config-if)# ip address 192.168.2.1 255.255.255.0\nRouter1(config-if)# no shutdown\nRouter1(config)# interface g0/2\nRouter1(config-if)# ip address 192.168.168.1 255.255.255.0\nRouter1(config-if)# no shutdown"),
+        ("Eeg routing table-ka — network walba oo interface *up* ah si toos ah ayuu u galaa", "Router1# show ip route\nC    192.168.1.0/24 is directly connected, GigabitEthernet0/0\nL    192.168.1.1/32 is directly connected, GigabitEthernet0/0\nC    192.168.2.0/24 ...\nC    192.168.168.0/24 ..."),
+        ("Tijaabi: Cashier 1 → Cashier 3 (labaduba Router1) ✅ ; Cashier 1 → Cashier 4 (Router_2) ❌", ""),
+        ("Su'aal: Router1 ma yaqaan 192.168.3.0? `show ip route` — maya. Xalka: static route (Lab 14) ama OSPF (Lab 15)", "Router1(config)# ip route 192.168.3.0 255.255.255.0 192.168.168.2\nRouter_2(config)# ip route 192.168.1.0 255.255.255.0 192.168.168.1\nRouter_2(config)# ip route 192.168.2.0 255.255.255.0 192.168.168.1"),
+      ],
+      verify=["`show ip route` labada router — `C` iyo `L` keliya (ka hor static-ka)", "`show ip interface brief`", "Cashier 2 iyo Cashier 4 gateway ma laha — geli, kadib ping"],
+      notes=["`L` (local) = IP-ga interface-ka laftiisa /32; `C` (connected) = network-ka oo dhan.", "Router-ku wuxuu gudbiyaa keliya packets-ka network-kooda uu routing table ku hayo — haddii kale wuu tuuraa (ICMP *destination unreachable*)."]),
+
+ dict(slug='26-network-design-static-routing', src='networkd design then configuration min bilow ila routing-ki 3 June 2026.pkt', src_dir=r'C:\Users\hp\Documents\CCNA',
+      title='Network Design — HQ, Server Room, Burco + Static Routing',
+      level='Dhexe', lessons=['04-routing/02-static-routing.md', '02-ip-addressing/01-ip-address-configuration.md'],
+      objective="Mashruuc: shabakad shirkadeed bilow ilaa routing. HQ (CEO, Project Manager — 192.168.3.0/24), qolka server-rada (192.168.2.0/24), laanta Burco (192.168.1.0/24) iyo router Telesom oo internet-ka u taagan. Saddexda router waxaa isku xira links /8 (12.0.0.0, 23.0.0.0), static routes ayaana network walba isku xira. HQ-R1 wuxuu tusayaa **laba qaab** oo isku route ah: exit-interface keliya (`g0/2`) iyo next-hop (`12.0.0.2`) — kan labaad ayaa la doorbidaa Ethernet.",
+      steps=[
+        ("Qorshaha IP (design)", "HQ LAN       192.168.3.0/24   gw 192.168.3.1  (HQ-R1 g0/0)\nServers LAN  192.168.2.0/24   gw 192.168.2.1  (R2_server g0/0)\nBurco LAN    192.168.1.0/24   gw 192.168.1.1  (R3_brco g0/0)\nHQ <-> R2    12.0.0.0/8       12.0.0.1 <-> 12.0.0.2\nR2 <-> Burco 23.0.0.0/8       23.0.0.2 <-> 23.0.0.1"),
+        ("HQ-R1: static route u socda servers-ka (next-hop)", "HQ-R1(config)# ip route 192.168.2.0 255.255.255.0 12.0.0.2\nHQ-R1(config)# ip route 192.168.1.0 255.255.255.0 12.0.0.2      <- Burco (ku dar!)"),
+        ("R2_server (dhexe): labada dhinac", "R2_server(config)# ip route 192.168.3.0 255.255.255.0 12.0.0.1\nR2_server(config)# ip route 192.168.1.0 255.255.255.0 23.0.0.1"),
+        ("R3_brco: servers + HQ (labaduba R2 ayay maraan)", "R3_brco(config)# ip route 192.168.2.0 255.255.255.0 23.0.0.2\nR3_brco(config)# ip route 192.168.3.0 255.255.255.0 23.0.0.2      <- HQ (ku dar!)"),
+        ("Telesom_Router iyo Internet_Server weli lama habayn — tababar: default route HQ-R1 ku dar", "HQ-R1(config)# ip route 0.0.0.0 0.0.0.0 <IP Telesom>"),
+      ],
+      verify=["`show ip route` router walba — 3-da LAN oo dhan waa inay muuqdaan (`C` ama `S`)", "CEO → ping Server0 (192.168.2.2) ✅", "CEO → ping branch_manager (192.168.1.2) — ✅ keliya marka routes-ka maqan la daro"],
+      notes=["Faylkan HQ-R1 iyo R3_brco route-ka ay isu leeyihiin **ma laha** — HQ iyo Burco isma gaaraan ilaa aad tallaabada 2 iyo 4 ku darto. Waa tababar fiican.", "Link-yada router-rada /8 ayaa loo isticmaalay; /30 ayaa sax ah (laba host keliya).", "IT_support laptop iyo Internet_Server IP ma laha."]),
+
+ dict(slug='27-eigrp-daheeye-university', src='Daheeye Network Universty Using EIGRP GROUP 2.pkt', src_dir=r'C:\Users\hp\Desktop',
+      title='Mashruuc Guud — Daheeye University: EIGRP, ROAS, DHCP, EtherChannel, SSH (4 campus)',
+      level='Sare', lessons=['03-switching/08-router-on-a-stick.md', '03-switching/11-etherchannel.md', '06-ip-services/02-dhcp.md', '05-device-management/02-ssh.md', '04-routing/03-ospf.md'],
+      extra_src=[('EIGRP Configuration.pkt', 'eigrp-daheeye-starter.pkt', 'Faylka bilowga ah: topology-ga oo aan la habayn (ku tababaro adigu)')],
+      objective="Mashruuc koox (Group 2): jaamacad 4 campus leh — HQ Hargeysa, Boorama, Burco, Berbera. Campus walba: router ROAS oo 5 VLAN leh (10 ADMIN, 20 FACULTY, 30 STUDENTS, 40 SERVERS, 99 MGMT), switch dhexe + 2 access switch oo EtherChannel LACP isku xiran, DHCP router-ka, SSH management VLAN 99. Afarta router waxaa isku xira serial links /30 (10.255.0.0/27) iyo **EIGRP 100** (dynamic routing Cisco). HQ waa xiriirka internet-ka: default route → TELESOM-ISP, ISP-guna static routes 4-ta campus. Qorshaha IP: `10.<campus>.<vlan>.0/24` (10 HQ, 20 Boorama, 30 Burco, 40 Berbera).",
+      steps=[
+        ("Router walba: ROAS — sub-interface VLAN walba (tusaale R-HQ)", "R-HQ(config)# interface g0/1\nR-HQ(config-if)# no shutdown\nR-HQ(config)# interface g0/1.10\nR-HQ(config-subif)# encapsulation dot1Q 10\nR-HQ(config-subif)# ip address 10.10.10.1 255.255.255.0\nR-HQ(config)# interface g0/1.20\nR-HQ(config-subif)# encapsulation dot1Q 20\nR-HQ(config-subif)# ip address 10.10.20.1 255.255.255.0\n... (30, 40, 99 sidoo kale)"),
+        ("Router walba: DHCP pools VLAN 10/20/30 (.1–.20 ka reeb)", "R-HQ(config)# ip dhcp excluded-address 10.10.10.1 10.10.10.20\nR-HQ(config)# ip dhcp pool HQ-ADMIN\nR-HQ(dhcp-config)# network 10.10.10.0 255.255.255.0\nR-HQ(dhcp-config)# default-router 10.10.10.1"),
+        ("EIGRP 100 router walba — router-id, passive default, serials keliya fur, networks", "R-HQ(config)# router eigrp 100\nR-HQ(config-router)# eigrp router-id 1.1.1.1\nR-HQ(config-router)# passive-interface default\nR-HQ(config-router)# no passive-interface s0/0/0\nR-HQ(config-router)# no passive-interface s0/0/1\nR-HQ(config-router)# no passive-interface s0/1/0\nR-HQ(config-router)# network 10.10.0.0 0.0.255.255\nR-HQ(config-router)# network 10.255.0.0 0.0.0.31\nR-HQ(config-router)# no auto-summary"),
+        ("HQ: default route → ISP oo EIGRP ku faafi; ISP: routes 4-ta campus", "R-HQ(config)# ip route 0.0.0.0 0.0.0.0 203.0.113.1\nR-HQ(config)# router eigrp 100\nR-HQ(config-router)# redistribute static\nTELESOM-ISP(config)# ip route 10.10.0.0 255.255.0.0 203.0.113.2\nTELESOM-ISP(config)# ip route 10.20.0.0 255.255.0.0 203.0.113.2  (30, 40 sidoo kale)"),
+        ("Switch dhexe campus walba: EtherChannel LACP 2 access switch, trunk native 999, allowed VLANs, SVI VLAN 99 + gateway", "MAIN-SWITCH(config)# interface range fa0/1-2\nMAIN-SWITCH(config-if-range)# channel-group 1 mode active\nMAIN-SWITCH(config)# interface port-channel 1\nMAIN-SWITCH(config-if)# switchport mode trunk\nMAIN-SWITCH(config-if)# switchport trunk native vlan 999\nMAIN-SWITCH(config-if)# switchport trunk allowed vlan 10,20,30,40,99,999\nMAIN-SWITCH(config)# interface vlan 99\nMAIN-SWITCH(config-if)# ip address 10.10.99.2 255.255.255.0\nMAIN-SWITCH(config)# ip default-gateway 10.10.99.1"),
+        ("SSH switch-ka dhexe iyo router-ka (domain daheeye.local, user admin)", "MAIN-SWITCH(config)# ip domain-name daheeye.local\nMAIN-SWITCH(config)# crypto key generate rsa\nMAIN-SWITCH(config)# username admin secret cisco\nMAIN-SWITCH(config)# ip ssh version 2\nMAIN-SWITCH(config)# line vty 0 15\nMAIN-SWITCH(config-line)# login local\nMAIN-SWITCH(config-line)# transport input ssh"),
+      ],
+      verify=["`show ip eigrp neighbors` R-HQ — 3 deris (Boorama, Burco, Berbera)", "`show ip route eigrp` — networks-ka campus-yada kale `D`, default `D*EX`", "`show ip eigrp topology` — successor iyo feasible successor", "`show etherchannel summary` switch walba — Po1/Po2 (SU)", "`show ip dhcp binding` router walba", "PC HQ VLAN 30 → ping server Berbera 10.40.40.10 ✅", "PC → `ssh -l admin 10.10.99.2`"],
+      notes=["EIGRP waa protocol Cisco (hadda open RFC 7868): AD 90, metric bandwidth+delay, DUAL algorithm, neighbors Hello sida OSPF laakiin area ma laha — **AS number** (100) waa inuu isku mid noqdaa router walba.", "`passive-interface default` + `no passive-interface s0/x` = LAN-yada oo dhan passive, serial-yada keliya Hello — hab wanaagsan.", "Faylka starter-ka (`eigrp-daheeye-starter.pkt`) waa isla topology-ga iyadoo aan waxba lagu qorin — ku tababaro bilow ilaa dhammaad.", "Cashar EIGRP weli lama qorin; casharka OSPF wuxuu sharxayaa fikradaha guud ee dynamic routing."]),
 ]
 
 REPORTS_ONLY = [('DONE Ibrahim Abdirashid CCNA 2 — LAB ACTIVITY 4.pdf', 'lab-activity-4-report.pdf',
@@ -419,14 +473,15 @@ def main(src_dir, out_root):
             shutil.rmtree(out)
         os.makedirs(out)
         pkt_dst = os.path.join(out, lab['slug'] + '.pkt')
-        shutil.copy2(os.path.join(src_dir, lab['src']), pkt_dst)
+        sdir = lab.get('src_dir', src_dir)
+        shutil.copy2(os.path.join(sdir, lab['src']), pkt_dst)
         subprocess.run([sys.executable, os.path.join(HERE, "pkt_extract.py"), pkt_dst, out], check=True, capture_output=True)
         S = json.load(open(os.path.join(out, 'summary.json'), encoding='utf-8'))
         files = {'list': [(lab['slug'] + '.pkt', 'faylka Packet Tracer (fur PT 8.2+ / 9)'),
                           ('topology.svg', 'sawirka topology-ga'),
                           ('configs/', 'running-config qalab walba (.txt)')]}
         for src, dst, desc in lab.get('extra_src', []):
-            shutil.copy2(os.path.join(src_dir, src), os.path.join(out, dst))
+            shutil.copy2(os.path.join(sdir, src), os.path.join(out, dst))
             files['list'].append((dst, desc))
         if lab.get('report'):
             rep = re.sub(r'[^A-Za-z0-9._-]+', '-', lab['report']).strip('-').lower()

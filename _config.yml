@@ -1,0 +1,13 @@
+title: CCNA Learning Journal — Af-Soomaali
+description: Casharrada CCNA 200-301 iyo labs-ka Packet Tracer oo Af-Soomaali ah
+theme: jekyll-theme-cayman
+lang: so
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - labs
+exclude:
+  - tools/

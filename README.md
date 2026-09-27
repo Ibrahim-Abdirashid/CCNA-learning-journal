@@ -2,12 +2,14 @@
 
 > **Casharrada CCNA 200-301 iyo labs-ka Packet Tracer — oo dhammaan Af-Soomaali lagu qoray.**
 >
+> 🌐 Website (mobile-ka ka akhri): **<https://ibrahim-abdirashid.github.io/CCNA-learning-journal/>**
+>
 > Waxaan repo-gan u qoray dhalinyarada Soomaaliyeed ee baranaysa networking. Cashar walba waa sida aan naftayda u fahmay, oo aan ku sharaxay af fudud, iyadoo erayada farsamada (VLAN, subnet, trunk…) Ingiriisi lagu hayay si imtixaanka loo fahmo. Lab walba waxaad heli kartaa faylka `.pkt`, sawirka topology-ga, IP-yada, tallaabooyinka iyo `running-config`-ga.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/Casharrada-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.md)
 [![Tools: MIT](https://img.shields.io/badge/Tools-MIT-blue.svg)](LICENSE.md)
 ![Casharro](https://img.shields.io/badge/Casharro-29-green)
-![Labs](https://img.shields.io/badge/Labs%20Packet%20Tracer-23-orange)
+![Labs](https://img.shields.io/badge/Labs%20Packet%20Tracer-27-orange)
 
 ---
 
@@ -30,7 +32,7 @@ CCNA-learning-journal/
 ├── 04-routing/                Routing, static routing, OSPF
 ├── 05-device-management/      Telnet, SSH, CDP/LLDP
 ├── 06-ip-services/            NAT iyo DHCP
-├── labs/                      23 lab Packet Tracer (.pkt + README + topology + configs)
+├── labs/                      27 lab Packet Tracer (.pkt + README + topology + configs)
 ├── images/                    Sawirrada casharrada
 └── tools/                     Scripts-ka repo-gan lagu dhisay (pkt → xml/svg, OneNote → md)
 ```
@@ -135,6 +137,10 @@ Liiska buuxa iyo sharaxaadda: **[labs/README.md](labs/README.md)**
 | 21 | [CCNA2 Lab Activity 2 — VLANs, Trunk, VTP](labs/21-lab-activity-2-vlans-trunk-vtp/README.md) | Sare |
 | 22 | [CCNA2 Lab Activity 3 — Inter-VLAN MLS](labs/22-lab-activity-3-intervlan-mls/README.md) | Sare |
 | 23 | [Capstone — EtherChannel, VLANs, ROAS, DHCP, SSH, Static](labs/23-capstone-etherchannel-vlans-dhcp-ssh-static/README.md) | Sare |
+| 24 | [IP Address Configuration — Router, Switch, PC (Day 10)](labs/24-ip-configuration-basics/README.md) | Bilow |
+| 25 | [Routing Part 1 — Directly Connected (Day 12)](labs/25-routing-directly-connected/README.md) | Bilow |
+| 26 | [Network Design — HQ, Servers, Burco + Static Routing](labs/26-network-design-static-routing/README.md) | Dhexe |
+| 27 | [Daheeye University — EIGRP, ROAS, DHCP, EtherChannel, SSH (4 campus)](labs/27-eigrp-daheeye-university/README.md) | Sare |
 
 Lab walba wuxuu leeyahay:
 
@@ -155,7 +161,7 @@ Lab walba wuxuu leeyahay:
 | 04 — Routing | ✅ 2 cashar + 1 draft (OSPF) |
 | 05 — Device Management | ✅ 2 cashar + 1 draft (CDP/LLDP) |
 | 06 — IP Services | 📝 2 draft (NAT, DHCP) |
-| Labs | ✅ 23 lab |
+| Labs | ✅ 27 lab |
 | ACL, Port Security, Wireless | ⏳ Soo socda |
 
 ---

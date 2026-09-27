@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1654 880" width="1654" height="880" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1654" height="880" fill="#ffffff"/>
+<line x1="620" y1="101" x2="673" y2="236" stroke="#555" stroke-width="2"/>
+<rect x="622" y="123" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="632" y="134" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="644" y="198" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="661" y="209" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="772" y1="90" x2="673" y2="236" stroke="#555" stroke-width="2"/>
+<rect x="740" y="114" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="750" y="125" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="677" y="196" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="695" y="207" font-size="10" text-anchor="middle" fill="#333">F0/2</text>
+<line x1="673" y1="236" x2="666" y2="334" stroke="#555" stroke-width="2"/>
+<rect x="654" y="250" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="672" y="261" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="651" y="304" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="668" y="315" font-size="10" text-anchor="middle" fill="#333">G0/0</text>
+<line x1="1564" y1="378" x2="1413" y2="446" stroke="#555" stroke-width="2"/>
+<rect x="1521" y="385" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1531" y="396" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="1429" y="423" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1446" y="434" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="1562" y1="531" x2="1413" y2="446" stroke="#555" stroke-width="2"/>
+<rect x="1519" y="504" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1529" y="515" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="1428" y="457" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1446" y="468" font-size="10" text-anchor="middle" fill="#333">F0/2</text>
+<line x1="1413" y1="446" x2="1268" y2="454" stroke="#555" stroke-width="2"/>
+<rect x="1364" y="440" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1381" y="451" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="1283" y="444" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1300" y="455" font-size="10" text-anchor="middle" fill="#333">G0/0</text>
+<line x1="91" y1="154" x2="90" y2="299" stroke="#555" stroke-width="2"/>
+<rect x="81" y="178" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="91" y="189" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="73" y="259" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="90" y="270" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="90" y1="299" x2="316" y2="230" stroke="#555" stroke-width="2"/>
+<rect x="122" y="276" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="140" y="287" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="249" y="237" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="267" y="248" font-size="10" text-anchor="middle" fill="#333">G0/0</text>
+<line x1="744" y1="750" x2="633" y2="658" stroke="#555" stroke-width="2"/>
+<rect x="709" y="722" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="719" y="733" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="640" y="670" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="657" y="681" font-size="10" text-anchor="middle" fill="#333">F0/1</text>
+<line x1="502" y1="732" x2="633" y2="658" stroke="#555" stroke-width="2"/>
+<rect x="520" y="708" width="20" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="530" y="719" font-size="10" text-anchor="middle" fill="#333">F0</text>
+<rect x="587" y="666" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="604" y="677" font-size="10" text-anchor="middle" fill="#333">F0/2</text>
+<line x1="633" y1="658" x2="642" y2="484" stroke="#555" stroke-width="2"/>
+<rect x="617" y="612" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="635" y="623" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="622" y="514" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="640" y="525" font-size="10" text-anchor="middle" fill="#333">G0/0</text>
+<line x1="1268" y1="454" x2="642" y2="484" stroke="#555" stroke-width="2"/>
+<rect x="1113" y="453" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1131" y="464" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<rect x="762" y="469" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="779" y="480" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<line x1="642" y1="484" x2="666" y2="334" stroke="#555" stroke-width="2"/>
+<rect x="630" y="443" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="647" y="454" font-size="10" text-anchor="middle" fill="#333">G0/2</text>
+<rect x="644" y="359" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="661" y="370" font-size="10" text-anchor="middle" fill="#333">G0/1</text>
+<line x1="666" y1="334" x2="316" y2="230" stroke="#555" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="565" y="303" width="49" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="590" y="314" font-size="10" text-anchor="middle" fill="#333">S0/0/0</text>
+<rect x="369" y="245" width="49" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="394" y="256" font-size="10" text-anchor="middle" fill="#333">S0/0/0</text>
+<line x1="666" y1="334" x2="1268" y2="454" stroke="#555" stroke-width="2"/>
+<rect x="782" y="352" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="799" y="363" font-size="10" text-anchor="middle" fill="#333">G0/2</text>
+<rect x="1119" y="420" width="35" height="15" rx="3" fill="#fff8dc" stroke="#ccc"/>
+<text x="1136" y="431" font-size="10" text-anchor="middle" fill="#333">G0/2</text>
+<rect x="600" y="81" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="620" y="105" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">PC</text>
+<text x="620" y="139" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Project_manager</text>
+<text x="620" y="153" font-size="10" text-anchor="middle" fill="#444">192.168.3.2</text>
+<rect x="752" y="70" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="772" y="94" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">PC</text>
+<text x="772" y="128" font-size="12" font-weight="600" text-anchor="middle" fill="#111">CEO</text>
+<text x="772" y="142" font-size="10" text-anchor="middle" fill="#444">192.168.3.3</text>
+<rect x="643" y="220" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="673" y="240" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="673" y="274" font-size="12" font-weight="600" text-anchor="middle" fill="#111">HQ_Switch</text>
+<circle cx="666" cy="334" r="22" fill="#1f77b4" stroke="#123" stroke-width="1.5"/>
+<text x="666" y="338" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">R</text>
+<text x="666" y="372" font-size="12" font-weight="600" text-anchor="middle" fill="#111">HQ-R1</text>
+<text x="666" y="386" font-size="10" text-anchor="middle" fill="#444">192.168.3.1, 12.0.0.1</text>
+<circle cx="1268" cy="454" r="22" fill="#1f77b4" stroke="#123" stroke-width="1.5"/>
+<text x="1268" y="458" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">R</text>
+<text x="1268" y="492" font-size="12" font-weight="600" text-anchor="middle" fill="#111">R2_Servers</text>
+<text x="1268" y="506" font-size="10" text-anchor="middle" fill="#444">192.168.2.1, 23.0.0.2, 12.0.0.2</text>
+<rect x="1383" y="430" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="1413" y="450" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="1413" y="484" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Servers_Switch</text>
+<rect x="1544" y="358" width="40" height="40" rx="6" fill="#d62728" stroke="#123" stroke-width="1.5"/>
+<text x="1564" y="382" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SRV</text>
+<text x="1564" y="416" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Server0</text>
+<text x="1564" y="430" font-size="10" text-anchor="middle" fill="#444">192.168.2.2</text>
+<rect x="1542" y="511" width="40" height="40" rx="6" fill="#d62728" stroke="#123" stroke-width="1.5"/>
+<text x="1562" y="535" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SRV</text>
+<text x="1562" y="569" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Server1</text>
+<text x="1562" y="583" font-size="10" text-anchor="middle" fill="#444">192.168.2.3</text>
+<circle cx="316" cy="230" r="22" fill="#1f77b4" stroke="#123" stroke-width="1.5"/>
+<text x="316" y="234" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">R</text>
+<text x="316" y="268" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Telesom_Router</text>
+<rect x="60" y="283" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="90" y="303" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="90" y="337" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Internet_Switch</text>
+<rect x="71" y="134" width="40" height="40" rx="6" fill="#d62728" stroke="#123" stroke-width="1.5"/>
+<text x="91" y="158" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SRV</text>
+<text x="91" y="192" font-size="12" font-weight="600" text-anchor="middle" fill="#111">Internet_Server</text>
+<rect x="482" y="712" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="502" y="736" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">LT</text>
+<text x="502" y="770" font-size="12" font-weight="600" text-anchor="middle" fill="#111">branch_manager</text>
+<text x="502" y="784" font-size="10" text-anchor="middle" fill="#444">192.168.1.2</text>
+<rect x="724" y="730" width="40" height="40" rx="6" fill="#7f7f7f" stroke="#123" stroke-width="1.5"/>
+<text x="744" y="754" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">LT</text>
+<text x="744" y="788" font-size="12" font-weight="600" text-anchor="middle" fill="#111">IT_support</text>
+<rect x="603" y="642" width="60" height="32" rx="4" fill="#2ca02c" stroke="#123" stroke-width="1.5"/>
+<text x="633" y="662" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">SW</text>
+<text x="633" y="696" font-size="12" font-weight="600" text-anchor="middle" fill="#111">burco_switch</text>
+<circle cx="642" cy="484" r="22" fill="#1f77b4" stroke="#123" stroke-width="1.5"/>
+<text x="642" y="488" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">R</text>
+<text x="642" y="522" font-size="12" font-weight="600" text-anchor="middle" fill="#111">R3_brco</text>
+<text x="642" y="536" font-size="10" text-anchor="middle" fill="#444">192.168.1.1, 23.0.0.1</text>
+</svg>
