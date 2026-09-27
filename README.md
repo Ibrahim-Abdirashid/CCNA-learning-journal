@@ -6,7 +6,7 @@
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/Casharrada-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.md)
 [![Tools: MIT](https://img.shields.io/badge/Tools-MIT-blue.svg)](LICENSE.md)
-![Casharro](https://img.shields.io/badge/Casharro-24-green)
+![Casharro](https://img.shields.io/badge/Casharro-29-green)
 ![Labs](https://img.shields.io/badge/Labs%20Packet%20Tracer-23-orange)
 
 ---
@@ -25,10 +25,11 @@
 ```
 CCNA-learning-journal/
 ├── 01-network-fundamentals/   Asaaska: IOS modes, config files, OSI, Layer 1
-├── 02-ip-addressing/          IP addressing iyo subnetting
+├── 02-ip-addressing/          IP addressing, subnetting, IPv6
 ├── 03-switching/              VLAN, trunk, VTP, inter-VLAN, STP, EtherChannel
-├── 04-routing/                Routing iyo static routing
-├── 05-device-management/      Telnet iyo SSH
+├── 04-routing/                Routing, static routing, OSPF
+├── 05-device-management/      Telnet, SSH, CDP/LLDP
+├── 06-ip-services/            NAT iyo DHCP
 ├── labs/                      23 lab Packet Tracer (.pkt + README + topology + configs)
 ├── images/                    Sawirrada casharrada
 └── tools/                     Scripts-ka repo-gan lagu dhisay (pkt → xml/svg, OneNote → md)
@@ -56,6 +57,7 @@ CCNA-learning-journal/
 | 2 | [Configuring IP Addresses](02-ip-addressing/02-configuring-ip-addresses.md) | Tallaabo-tallaabo Packet Tracer |
 | 3 | [Subnetting — Qaybta 1](02-ip-addressing/03-subnetting.md) | Subnet mask, network/broadcast, xisaabta |
 | 4 | [Subnetting — Qaybta 2](02-ip-addressing/04-subnetting-part-2.md) | VLSM iyo tusaalooyin |
+| 5 | [IPv6 Addressing](02-ip-addressing/05-ipv6-addressing.md) 📝 | Qaabka, soo gaabinta, GUA/link-local, /64, SLAAC |
 
 ### 🔷 03 — Switching
 
@@ -79,6 +81,7 @@ CCNA-learning-journal/
 |---|---|---|
 | 1 | [Routing — Hordhac](04-routing/01-routing-introduction.md) | IPv4 header, routing table, best path, directly connected / static / dynamic |
 | 2 | [Static Routing](04-routing/02-static-routing.md) | `ip route`, next-hop vs exit interface, default route |
+| 3 | [OSPF](04-routing/03-ospf.md) 📝 | Neighbors, LSDB, router-id, area, wildcard, DR/BDR, single & multi-area |
 
 ### 🔷 05 — Maamulka Qalabka (Device Management)
 
@@ -86,10 +89,20 @@ CCNA-learning-journal/
 |---|---|---|
 | 1 | [Telnet & SSH](05-device-management/01-telnet-and-ssh.md) | Local vs remote management, port 23 / 22 |
 | 2 | [SSH (Secure Shell)](05-device-management/02-ssh.md) | RSA keys, `login local`, `transport input ssh` |
+| 3 | [CDP iyo LLDP](05-device-management/03-cdp-lldp.md) 📝 | Deriska garasho, `show cdp neighbors`, amniga |
+
+### 🔷 06 — Adeegyada IP (IP Services)
+
+| # | Casharka | Waxa uu ka hadlayo |
+|---|---|---|
+| 1 | [NAT](06-ip-services/01-nat.md) 📝 | Inside/outside, static, dynamic, PAT overload |
+| 2 | [DHCP](06-ip-services/02-dhcp.md) 📝 | DORA, router DHCP server, pools, `ip helper-address` |
+
+📝 = **draft**: cashar la qoray oo weli dib loo eegayo — haddii aad khalad aragto Issue fur.
 
 ### ⏳ Casharro soo socda
 
-OSPF · NAT (static, dynamic, PAT) · DHCP · IPv6 · ACL · CDP/LLDP · Port Security · Wireless — labs-koodu waa diyaar (hoos eeg), casharradu way socdaan.
+ACL · Port Security · DHCP Snooping · Wireless · EIGRP · Network Automation.
 
 ---
 
@@ -137,12 +150,13 @@ Lab walba wuxuu leeyahay:
 | Qaybta | Xaaladda |
 |---|---|
 | 01 — Network Fundamentals | ✅ 5 cashar |
-| 02 — IP Addressing | ✅ 4 cashar |
+| 02 — IP Addressing | ✅ 4 cashar + 1 draft (IPv6) |
 | 03 — Switching | ✅ 11 cashar |
-| 04 — Routing | ✅ 2 cashar (OSPF soo socda) |
-| 05 — Device Management | ✅ 2 cashar |
+| 04 — Routing | ✅ 2 cashar + 1 draft (OSPF) |
+| 05 — Device Management | ✅ 2 cashar + 1 draft (CDP/LLDP) |
+| 06 — IP Services | 📝 2 draft (NAT, DHCP) |
 | Labs | ✅ 23 lab |
-| Casharrada OSPF, NAT, DHCP, IPv6, ACL | ⏳ Socda |
+| ACL, Port Security, Wireless | ⏳ Soo socda |
 
 ---
 

@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`20-lab-activity-1-vlsm-dhcp-ssh.pkt`](20-lab-activity-1-vlsm-dhcp-ssh.pkt) |
 | **Heerka** | Sare |
-| **Casharka la xiriira** | [03-subnetting](../../02-ip-addressing/03-subnetting.md) · [04-subnetting-part-2](../../02-ip-addressing/04-subnetting-part-2.md) · [02-ssh](../../05-device-management/02-ssh.md) |
+| **Casharka la xiriira** | [03-subnetting](../../02-ip-addressing/03-subnetting.md) · [04-subnetting-part-2](../../02-ip-addressing/04-subnetting-part-2.md) · [02-dhcp](../../06-ip-services/02-dhcp.md) · [02-ssh](../../05-device-management/02-ssh.md) · [05-ipv6-addressing](../../02-ip-addressing/05-ipv6-addressing.md) |
 | **Qalabka** | 34 PC, 3 Switch (L2), 1 Router |
 | **Warbixinta (PDF)** | [Ibrahim Abdirashid_CCNA2_Lab1_Report.pdf](ibrahim-abdirashid_ccna2_lab1_report.pdf) |
 

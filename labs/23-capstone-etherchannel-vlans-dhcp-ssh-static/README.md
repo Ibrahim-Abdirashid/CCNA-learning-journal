@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`23-capstone-etherchannel-vlans-dhcp-ssh-static.pkt`](23-capstone-etherchannel-vlans-dhcp-ssh-static.pkt) |
 | **Heerka** | Sare |
-| **Casharka la xiriira** | [08-router-on-a-stick](../../03-switching/08-router-on-a-stick.md) · [11-etherchannel](../../03-switching/11-etherchannel.md) · [02-static-routing](../../04-routing/02-static-routing.md) · [02-ssh](../../05-device-management/02-ssh.md) |
+| **Casharka la xiriira** | [08-router-on-a-stick](../../03-switching/08-router-on-a-stick.md) · [11-etherchannel](../../03-switching/11-etherchannel.md) · [02-dhcp](../../06-ip-services/02-dhcp.md) · [02-static-routing](../../04-routing/02-static-routing.md) · [02-ssh](../../05-device-management/02-ssh.md) |
 | **Qalabka** | 3 Switch (L2), 2 Router, 14 PC |
 
 ## 🎯 Ujeeddada

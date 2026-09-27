@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`14-static-routing-ipv4-ipv6.pkt`](14-static-routing-ipv4-ipv6.pkt) |
 | **Heerka** | Dhexe |
-| **Casharka la xiriira** | [01-routing-introduction](../../04-routing/01-routing-introduction.md) · [02-static-routing](../../04-routing/02-static-routing.md) |
+| **Casharka la xiriira** | [02-static-routing](../../04-routing/02-static-routing.md) · [05-ipv6-addressing](../../02-ip-addressing/05-ipv6-addressing.md) |
 | **Qalabka** | 3 Switch (L2), 6 PC, 3 Router |
 
 ## 🎯 Ujeeddada

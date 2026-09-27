@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`12-cdp-lldp.pkt`](12-cdp-lldp.pkt) |
 | **Heerka** | Bilow |
-| **Casharka la xiriira** | _(cashar weli lama qorin — waa mid soo socda)_ |
+| **Casharka la xiriira** | [03-cdp-lldp](../../05-device-management/03-cdp-lldp.md) |
 | **Qalabka** | 1 Switch (L3), 1 IP Phone, 1 Laptop, 1 Server, 3 Router, 1 Switch (L2) |
 
 ## 🎯 Ujeeddada

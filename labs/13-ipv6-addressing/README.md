@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`13-ipv6-addressing.pkt`](13-ipv6-addressing.pkt) |
 | **Heerka** | Dhexe |
-| **Casharka la xiriira** | _(cashar weli lama qorin — waa mid soo socda)_ |
+| **Casharka la xiriira** | [05-ipv6-addressing](../../02-ip-addressing/05-ipv6-addressing.md) |
 | **Qalabka** | 2 Switch (L2), 4 PC, 1 Router |
 
 ## 🎯 Ujeeddada

@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`16-ospf-multi-area-somaliland.pkt`](16-ospf-multi-area-somaliland.pkt) |
 | **Heerka** | Sare |
-| **Casharka la xiriira** | [01-routing-introduction](../../04-routing/01-routing-introduction.md) |
+| **Casharka la xiriira** | [03-ospf](../../04-routing/03-ospf.md) |
 | **Qalabka** | 5 PC, 4 Switch (L2), 5 Router, 1 Server, 1 Switch (L3) |
 
 ## 🎯 Ujeeddada

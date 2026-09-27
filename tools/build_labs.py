@@ -146,7 +146,7 @@ LABS = [
       notes=["Tilmaan: *active/passive* = LACP, *desirable/auto* = PAgP, *on* = static. Ha isku qasin labada protocol hal channel."]),
 
  dict(slug='12-cdp-lldp', src='CDP and LLDP Protocols pratical.pkt', title='CDP iyo LLDP — Deriska garasho (Neighbor Discovery)',
-      level='Bilow', lessons=[],
+      level='Bilow', lessons=['05-device-management/03-cdp-lldp.md'],
       objective="CDP (Cisco Discovery Protocol, Cisco keliya) iyo LLDP (IEEE 802.1AB, qalab kasta) waxay qalabka u ogolaadaan inuu ogaado qalabka toos ugu xiran: magaca, port-ka, model-ka, IP-ga. Topology-gan (3 router, switch L2, switch L3, IP phone, laptop, server) LLDP ayaa laga shiday dhammaan qalabka Cisco-ga si loo barbardhigo CDP.",
       steps=[
         ("CDP caadi ahaan wuu shidan yahay. Hubi:", "R1# show cdp neighbors\nR1# show cdp neighbors detail"),
@@ -158,7 +158,7 @@ LABS = [
       notes=["Faylkan IP lagama dhigin qalabka — ujeeddadu waa garashada deriska oo keliya (Layer 2).", "CDP wuxuu shaacin karaa macluumaad xasaasi ah, sidaas darteed `no cdp run` ama `no cdp enable` interface-yada dibadda."]),
 
  dict(slug='13-ipv6-addressing', src='IBRAHIM ABDIRASHID IPV6 LAB CONFIGURATION.pkt', title='IPv6 Addressing — Router iyo laba LAN',
-      level='Dhexe', lessons=[],
+      level='Dhexe', lessons=['02-ip-addressing/05-ipv6-addressing.md'],
       objective="Router ISR4331 ayaa laba LAN u kala qaybinaya IPv6: 2001:DB8:1::/64 iyo 2001:DB8:2::/64. `ipv6 unicast-routing` waa khasab si router-ku IPv6 u gudbiyo uuna PC-yada u diro Router Advertisement (SLAAC).",
       steps=[
         ("Shid IPv6 routing", "R1(config)# ipv6 unicast-routing"),
@@ -169,7 +169,7 @@ LABS = [
       notes=["Faylkan PC-yadu IPv6 gacanta laguma qorin — SLAAC ku tijaabi ama adigu geli.", "Link-local (FE80::/10) interface walba si toos ah ayuu u helaa marka IPv6 la shido."]),
 
  dict(slug='14-static-routing-ipv4-ipv6', src='Static Routing using ipv4 and ipv6.pkt', title='Static Routing — IPv4 iyo IPv6 (3 router)',
-      level='Dhexe', lessons=['04-routing/01-routing-introduction.md', '04-routing/02-static-routing.md'],
+      level='Dhexe', lessons=['04-routing/02-static-routing.md', '02-ip-addressing/05-ipv6-addressing.md'],
       objective="Saddex router (R-LAN1, R-LAN2, R-LAN3) oo xadhig isku xiran, mid walbana LAN gaar ah leeyahay (192.168.1.0, .2.0, .3.0 /24). Router walba waxaa gacanta lagu tusayaa (static route) networks-ka uusan toos ugu xirnayn. Labada qaab ayaa la isticmaalay: *next-hop* iyo *exit-interface + next-hop*.",
       steps=[
         ("Interface-yada IP sii (IPv4 + IPv6) oo shid — tusaale R-LAN1", "R-LAN1(config)# interface g0/0\nR-LAN1(config-if)# ip address 192.168.1.1 255.255.255.0\nR-LAN1(config-if)# ipv6 address 2000:ABC:1::1/64\nR-LAN1(config-if)# no shutdown\nR-LAN1(config)# interface g0/1\nR-LAN1(config-if)# ip address 1.0.0.1 255.255.255.252\nR-LAN1(config-if)# ipv6 address 200:1::1/64\nR-LAN1(config-if)# no shutdown"),
@@ -182,7 +182,7 @@ LABS = [
       notes=["Faylka hadda ku jira: IPv4 static routes-ka waa dhammaystiran yihiin; IPv6 static routes-ka weli lagama qorin router-rada — tallaabada 5 ku dhammaystir.", "Link-yada router-rada /30 (255.255.255.252) ayaa loo isticmaalay: 2 host keliya ayaa loo baahan yahay."]),
 
  dict(slug='15-ospf-single-area', src='OSPF Single area 0 configuration.pkt', title='OSPF Single Area (Area 0) — 3 router serial',
-      level='Dhexe', lessons=['04-routing/01-routing-introduction.md'],
+      level='Dhexe', lessons=['04-routing/03-ospf.md'],
       objective="OSPF (Open Shortest Path First) waa dynamic routing protocol: router-radu iyagaa isku sheega networks-ka. Saddex router oo serial isku xiran, dhammaan area 0 (backbone). Router walba router-id gaar ah (1.1.1.1, 2.2.2.2, 3.3.3.3). Process ID-gu (10, 20, 30) waa mid gudaha router-ka ah, isku mid ma ahaan karo — laakiin **area**-du waa inay isku mid noqotaa.",
       steps=[
         ("Interface-yada IP sii (serial-ka DCE-ga `clock rate` u baahan karaa)", "R1(config)# interface s0/0/0\nR1(config-if)# ip address 192.168.10.1 255.255.255.0\nR1(config-if)# clock rate 64000\nR1(config-if)# no shutdown"),
@@ -195,7 +195,7 @@ LABS = [
       notes=["Wildcard mask = 255.255.255.255 − subnet mask (0.0.0.255 = /24).", "Haddii deris (neighbor) uusan soo bixin: hubi area, subnet isku mid, interface *up*, iyo hello/dead timers."]),
 
  dict(slug='16-ospf-multi-area-somaliland', src='OSPF practice.pkt', title='OSPF Multi-Area — Hargeysa, Boorama, Burco, Berbera',
-      level='Sare', lessons=['04-routing/01-routing-introduction.md'],
+      level='Sare', lessons=['04-routing/03-ospf.md'],
       objective="Shabakad shirkadeed oo 4 magaalo ah: HQ Hargeysa (R1, area 0 + server 172.16.1.2), Boorama (R2, area 1), Burco (R3, area 2), Berbera (R4, area 3). Afarta router waxay isku yimaadaan L3 switch (192.168.1.0/24 = area 0 backbone). Router walba oo magaalo ah waa ABR (Area Border Router) — hal lug area 0, lugta kale area-diisa. TELESOM-ISP waa router bannaan oo loogu talagalay default route mustaqbalka.",
       steps=[
         ("R1-Hargaisa (HQ, area 0 keliya)", "R1-Hargaisa(config)# router ospf 1\nR1-Hargaisa(config-router)# router-id 1.1.1.1\nR1-Hargaisa(config-router)# network 192.168.1.0 0.0.0.255 area 0\nR1-Hargaisa(config-router)# network 172.16.0.0 0.0.255.255 area 0"),
@@ -207,7 +207,7 @@ LABS = [
       notes=["Area walba waa inuu area 0 taabtaa (ama virtual-link). Halkan ABR walba si toos ah ayuu area 0 ugu xiran yahay.", "Network-ga L3 switch-ku waa *broadcast multi-access*: DR/BDR ayaa la doortaa (router-id-ga ugu sarreeya = DR haddii priority isku mid yahay).", "Server-ka HQ IP-giisu waa 172.16.1.2/16 halka router-ku /8 leeyahay — mismatch yar; labadaba /16 ka dhig.", "TELESOM-ISP weli lama habayn — tababar: `ip route 0.0.0.0 0.0.0.0 <ISP>` R1 ku dar iyo `default-information originate`."]),
 
  dict(slug='17-nat-static', src='NAT using Static NAT.pkt', title='NAT — Static NAT (1:1)',
-      level='Dhexe', lessons=[],
+      level='Dhexe', lessons=['06-ip-services/01-nat.md'],
       objective="Static NAT wuxuu si joogto ah isugu beddelaa hal IP gudaha ah (192.168.10.10 = PC1) iyo hal IP dibadda ah (203.0.113.100). Waxaa loo isticmaalaa server gudaha ah oo dibadda laga gaari karo. Interface-ka LAN = `inside`, interface-ka internet-ka = `outside`.",
       steps=[
         ("Interface-yada IP sii oo calaamadee inside/outside", "Router(config)# interface g0/0\nRouter(config-if)# ip address 192.168.10.1 255.255.255.0\nRouter(config-if)# ip nat inside\nRouter(config)# interface g0/1\nRouter(config-if)# ip address 203.0.10.1 255.255.255.0\nRouter(config-if)# ip nat outside"),
@@ -218,7 +218,7 @@ LABS = [
       notes=["IP-ga global-ka (203.0.113.100) ma aha inuu interface-ka outside ku yaal — router-ku wuu ka jawaabayaa ARP-ka (proxy).", "Faylkan server-ka waxaa loo baahan yahay route ku noqoshada 203.0.113.0 — Packet Tracer wuu ka gudbaa maadaama server-ku gateway 203.0.10.1 leeyahay."]),
 
  dict(slug='18-nat-dynamic', src='NAT using Dynamic Nat.pkt', title='NAT — Dynamic NAT (pool)',
-      level='Dhexe', lessons=[],
+      level='Dhexe', lessons=['06-ip-services/01-nat.md'],
       objective="Dynamic NAT wuxuu PC-yada gudaha (192.168.10.0/24) si ku-meel-gaar ah u siiyaa IP ka mid ah *pool* dibadda ah (209.165.201.10 – .20). ACL ayaa sheegaya cidda loo oggol yahay in la tarjumo. Marka pool-ku dhammaado, PC-yada intiisa kale internet ma helaan — sababtaas ayaa PAT loo isticmaalaa (Lab 19).",
       steps=[
         ("Inside / outside", "R1(config)# interface g0/0\nR1(config-if)# ip nat inside\nR1(config)# interface g0/1\nR1(config-if)# ip nat outside"),
@@ -231,7 +231,7 @@ LABS = [
       notes=["Pool-ka 11 IP ayuu leeyahay: haddii 12 PC isku mar isticmaalaan, kan 12aad wuu fashilmayaa (`show ip nat statistics` → misses).", "Translations-ku waqti ayay ku dhacaan (timeout) haddii aan la isticmaalin."]),
 
  dict(slug='19-nat-pat-overload', src='NAT PAT ama Overload.pkt', title='NAT — PAT / Overload (hal IP, PC badan)',
-      level='Dhexe', lessons=[],
+      level='Dhexe', lessons=['06-ip-services/01-nat.md'],
       objective="PAT (Port Address Translation, *overload*) wuxuu dhammaan PC-yada gudaha ku tarjumaa **hal** IP dibadda ah (IP-ga interface g0/1 = 209.165.201.1) isagoo kala saara *port numbers*. Waa habka guryaha iyo shirkadaha yaryar ku galaan internet-ka.",
       steps=[
         ("Inside / outside", "R1(config)# interface g0/0\nR1(config-if)# ip nat inside\nR1(config)# interface g0/1\nR1(config-if)# ip nat outside"),
@@ -243,7 +243,7 @@ LABS = [
       notes=["⚠️ **Faylkan `.pkt` NAT weli laguma habayn** — waxaa ku jira topology-ga iyo IP-yada oo keliya (router-ka `router rip` bannaan ayaa ku jira). Tallaabooyinka kore adigu ku dhammaystir, kadib faylka kaydi.", "Halkii interface, pool-na waa loo isticmaali karaa: `ip nat inside source list 1 pool NAT-POOL overload`."]),
 
  dict(slug='20-lab-activity-1-vlsm-dhcp-ssh', src='CCNA2-LABACTIVITY 1.pkt', title='CCNA2 Lab Activity 1 — VLSM, DHCP, SSH, IPv6 (3 LAN)',
-      level='Sare', lessons=['02-ip-addressing/03-subnetting.md', '02-ip-addressing/04-subnetting-part-2.md', '05-device-management/02-ssh.md'],
+      level='Sare', lessons=['02-ip-addressing/03-subnetting.md', '02-ip-addressing/04-subnetting-part-2.md', '06-ip-services/02-dhcp.md', '05-device-management/02-ssh.md', '02-ip-addressing/05-ipv6-addressing.md'],
       report='Ibrahim Abdirashid_CCNA2_Lab1_Report.pdf',
       objective="Lab rasmi ah oo koorsada CCNA2. Hal router (R1, 2911) iyo 3 switch, LAN walba subnet cabbir gaar ah (VLSM): LAN2 /27 (30 host), LAN3 /28 (14 host), LAN1 /29 (6 host). R1 waa DHCP server saddexda LAN, dhammaan qalabku SSH ayay leeyihiin, interface walbana IPv6 dual-stack (2001:DB8:ACAD:x::1/64). Warbixinta buuxda: PDF-ka hoose.",
       steps=[
@@ -283,7 +283,7 @@ LABS = [
       notes=["/26 subnet: host-yada 62 VLAN walba (.1–.62, .65–.126, .129–.190)."]),
 
  dict(slug='23-capstone-etherchannel-vlans-dhcp-ssh-static', src='LAB EtherChannel-Vlans-Trunking-interVlan-DHCP-SSH-StaticRouting.pkt', title='Lab Guud (Capstone) — EtherChannel, VLANs, ROAS, DHCP, SSH, Static Routing',
-      level='Sare', lessons=['03-switching/08-router-on-a-stick.md', '03-switching/11-etherchannel.md', '04-routing/02-static-routing.md', '05-device-management/02-ssh.md'],
+      level='Sare', lessons=['03-switching/08-router-on-a-stick.md', '03-switching/11-etherchannel.md', '06-ip-services/02-dhcp.md', '04-routing/02-static-routing.md', '05-device-management/02-ssh.md'],
       objective="Isku-dar dhammaan casharrada: Xarunta (HQ) laba switch oo EtherChannel LACP (fa0/8-9) isku xiran, VLAN 10 CCNA (10.0.1.0/29) iyo 20 CCNP (10.0.2.0/28), router HQ-R1 oo *router-on-a-stick* (g0/0.10, g0/0.20) iyo DHCP server ah. Laan (branch) leh VLAN 30 CCIE (20.0.0.0/29) oo router b-R1 ku xiran; DHCP-ga laanta wuxuu maraa `ip helper-address` una socdaa HQ. Labada router waxay ku xiran yihiin 10.0.0.0/30, static routes ayaana isku xira. HQ-S1 SSH ayaa lagu maamulaa.",
       steps=[
         ("HQ-S1 ↔ HQ-S2: EtherChannel LACP + trunk", "HQ-S1(config)# interface range fa0/8-9\nHQ-S1(config-if-range)# channel-group 1 mode active\nHQ-S1(config-if-range)# switchport mode trunk\nHQ-S1(config)# interface port-channel 1\nHQ-S1(config-if)# switchport mode trunk"),

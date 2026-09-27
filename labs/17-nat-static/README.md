@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`17-nat-static.pkt`](17-nat-static.pkt) |
 | **Heerka** | Dhexe |
-| **Casharka la xiriira** | _(cashar weli lama qorin — waa mid soo socda)_ |
+| **Casharka la xiriira** | [01-nat](../../06-ip-services/01-nat.md) |
 | **Qalabka** | 1 PC, 1 Switch (L2), 1 Router, 1 Server |
 
 ## 🎯 Ujeeddada

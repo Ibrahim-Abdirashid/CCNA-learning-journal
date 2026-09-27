@@ -4,7 +4,7 @@
 |---|---|
 | **Faylka Packet Tracer** | [`15-ospf-single-area.pkt`](15-ospf-single-area.pkt) |
 | **Heerka** | Dhexe |
-| **Casharka la xiriira** | [01-routing-introduction](../../04-routing/01-routing-introduction.md) |
+| **Casharka la xiriira** | [03-ospf](../../04-routing/03-ospf.md) |
 | **Qalabka** | 3 PC, 3 Router, 3 Switch (L2) |
 
 ## 🎯 Ujeeddada
